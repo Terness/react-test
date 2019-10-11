@@ -1,0 +1,34 @@
+{
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true,
+          "ecmaVersion": 6
+        }
+    },
+    "extends": [
+        "tslint:latest", 
+        "tslint-react",
+        "eslint:recommended",
+        "plugin:react/recommended"
+        ],
+    "rules": {
+        "indent": [
+            true,
+            "spaces"
+        ],
+        "no-var": true,
+        "no-trailing-whitespace": true,
+        "eqeqeq": true,
+        "default-case": true,
+        "radix": true,
+        "block-spacing": true,
+        "quotemark": [true, "single"],
+        "semicolon": [true,"never"],
+        "no-console": [true, "warn"],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
+    }
+  }

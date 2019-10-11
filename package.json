@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.6.0",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
     "@svgr/webpack": "4.3.2",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.12",
@@ -57,6 +58,8 @@
     "style-loader": "1.0.0",
     "terser-webpack-plugin": "1.4.1",
     "ts-pnp": "1.1.4",
+    "tslint": "^5.20.0",
+    "tslint-react": "^4.1.0",
     "typescript": "3.6.4",
     "url-loader": "2.1.0",
     "webpack": "4.41.0",
