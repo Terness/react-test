@@ -1,0 +1,38 @@
+{
+    "plugins": ["@typescript-eslint", "react", "prettier"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended",
+        "prettier/react"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "strict": 0,
+        "valid-jsdoc": 2,
+        "quotes": ["single", { "allowTemplateLiterals": true }],
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
+        "react/react-in-jsx-scope": 2,
+        "prettier/prettier": 2,
+        "no-console": ["warn", { "allow": ["warn", "error"] }],
+        "@typescript-eslint/indent": [
+            "error",
+            4,
+            { "VariableDeclarator": 4, "SwitchCase": 1 }
+        ]
+    }
+}
