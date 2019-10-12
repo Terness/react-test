@@ -21,7 +21,9 @@ const isLocalhost = Boolean(
 )
 
 type Config = {
+    // prettier-ignore
     onSuccess?: (registration: ServiceWorkerRegistration) => void
+    // prettier-ignore
     onUpdate?: (registration: ServiceWorkerRegistration) => void
 }
 
