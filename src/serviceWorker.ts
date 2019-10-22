@@ -22,7 +22,7 @@ const isLocalhost = Boolean(
 
 type Config = {
     // prettier-ignore
-    onSuccess?: (registration: ServiceWorkerRegistration) => void
+    onSuccess?: (registration: ServiceWorkerRegistration) => void,
     // prettier-ignore
     onUpdate?: (registration: ServiceWorkerRegistration) => void
 }
@@ -31,6 +31,7 @@ export function register(config?: Config) {
     if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
         // The URL constructor is available in all browsers that support SW.
         const publicUrl = new URL(
+            // prettier-ignore
             (process as { env: { [key: string]: string } }).env.PUBLIC_URL,
             window.location.href
         )
